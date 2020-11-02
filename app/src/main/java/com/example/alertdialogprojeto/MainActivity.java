@@ -27,6 +27,12 @@ public class MainActivity extends AppCompatActivity {
         dialog.setTitle("Título");
         dialog.setMessage("Mensagem");
 
+        //Configura o cancelamento
+        dialog.setCancelable(false);
+
+        //Configura icone
+        dialog.setIcon(android.R.drawable.ic_btn_speak_now);
+
         //Configura acoes para botão sim ou não
         dialog.setPositiveButton("SIM", new DialogInterface.OnClickListener() {
             @Override
